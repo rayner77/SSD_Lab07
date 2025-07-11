@@ -1,5 +1,9 @@
 name: SonarQube Analysis
-
+uses: sonarsource/sonarqube-scan-action@master
+  with:
+    args: >
+      -Dsonar.projectKey=rayner77_Newsletter-WebApp
+      -Dsonar.projectName=Newsletter-WebApp
 on:
   push:
     branches: [ master ]
